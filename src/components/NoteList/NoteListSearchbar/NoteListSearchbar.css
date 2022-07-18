@@ -1,0 +1,19 @@
+.NoteListSearchbar{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.NoteListSearchbar input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+
+.NoteListSearchbar input:focus{
+    box-shadow: 0 0 10px #5183f5;
+    border: 1px solid #838383;
+    /* outline: 1px solid #838383; */
+}

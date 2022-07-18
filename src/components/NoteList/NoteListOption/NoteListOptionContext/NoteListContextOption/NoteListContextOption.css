@@ -1,0 +1,32 @@
+.NoteListContextOption{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    padding: 0px 10px;
+    color: #797979;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+
+.NoteListContextOption:hover{
+    background-color: #f0f0f0;
+    color: #545454;
+}
+
+/* Styling for trash option */
+.NoteListContextOptionTrash{
+
+}
+
+.NoteListContextOptionTrash:hover{
+    background-color: #F2777A;
+    color: white;
+}
+
+.NoteListContextOptionSpacer{
+    width: 10px;
+}

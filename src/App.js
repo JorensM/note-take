@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux/es/exports';
+import notesReducer from "redux/slices/notesReducer"
+import foldersReducer from 'redux/slices/foldersReducer';
+
+import { NoteTakeApp } from 'containers/NoteTakeApp/NoteTakeApp.js';
+
 import './App.css';
+
+
+const store = configureStore({
+  reducer: {
+    notesState: notesReducer,
+    folders: foldersReducer,
+  }
+})
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className='App'>
+        <NoteTakeApp/>
+      </div>
+    </Provider>
   );
 }
 

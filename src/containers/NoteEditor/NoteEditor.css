@@ -1,0 +1,23 @@
+.NoteEditor{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F5F5;
+    box-sizing: border-box;
+}
+
+.NoteEditor textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.NoteEditorEmpty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

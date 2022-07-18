@@ -1,0 +1,48 @@
+.AppSidebar{
+    width: 240px;
+    height: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    background-color: #2d2d2d;
+}
+
+.AppSidebarSubheader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #7a7a7a;
+    font-weight: 700;
+    font-size: 14px;
+    height: fit-content;
+    user-select: none;
+}
+
+.AppSidebarFoldersTop{
+    width: 100%;
+    height: 200px;
+}
+
+.AppSidebarFoldersBot{
+    width: 100%;
+}
+
+.AppSidebarTempFolderForm{
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.AppSidebarTempFolderForm input{
+    background-color: #545454;
+    color: white;
+    width: 100%;
+    height: 30px;
+}
+
+.AppSidebarTempFolderForm input::placeholder{
+    color: rgb(168, 168, 168);
+}
